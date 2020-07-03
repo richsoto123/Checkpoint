@@ -37,11 +37,12 @@ pushTrue([1]) ===> [1, 'last element']
 pushTrue([1,2,3]) ===> [1, 2, 3, 'last element']
 
 */
-
+var arr =[1, 2, 3];
 function pushString(arr) {
-  // CODE HERE
+  arr[3] = 'last element' // CODE HERE
   console.log(arr);
 }
+//pushString(arr);
 
 /*
 QUESTION 2
@@ -56,10 +57,12 @@ mutateZeroElem([1]) ===> [1, true]
 mutateZeroElem([1,2,3]) ===> [1, 2, 3, true]
 
 */
-
+var array = [1, 2, 3]
 function push(array, value) {
-  // CODE HERE
+ array[3]= value // CODE HERE
+ console.log(array);
 }
+push(array,'truely');
 
 /*
 QUESTION 3
@@ -80,8 +83,12 @@ true
 */
 
 function printElements(array) {
-  // CODE HERE
+  for (i = 0; i < array.length ; i++){      // CODE HERE
+    console.log(array[i]);
+  } 
 }
+var array = [1, true, 'I am the third element', 'my index is 3 confusing right']
+printElements(array);
 
 /*
 QUESTION 4

@@ -27,8 +27,9 @@ CREATE A FUNCTION THAT RETURNS THE BOOLEAN false
 */
 
 function firstFunction() {
-  // YOUR CODE HERE
+  return false; // YOUR CODE HERE
 }
+firstFunction();
 
 /*
 QUESTION 2
@@ -38,9 +39,9 @@ CREATE A FUNCTION THAT RETURNS THE STRING 'hello world'
 */
 
 function helloWorld() {
-  // YOUR CODE HERE
+ return "hello world"; // YOUR CODE HERE
 }
-
+helloWorld();
 /*
 QUESTION 3
 
@@ -53,9 +54,11 @@ YOU WILL HAVE TO EDIT THE FUNCTION DECLARATION (the line where the key word 'fun
 
 */
 
-function question3(param) {
-  // YOUR CODE HERE
+
+function question3(name) {
+  return name;// YOUR CODE HERE
 }
+question3('Jane');
 
 /*
 QUESTION 4
@@ -69,8 +72,9 @@ concatQuestion('blake') ===> 'hello blake'
 */
 
 function concatQuestion(str) {
-  // YOUR CODE HERE
+  return 'hello ' + str;// YOUR CODE HERE
 }
+concatQuestion('Blake')
 
 /*
 QUESTION 5
@@ -78,15 +82,16 @@ QUESTION 5
 CREATE A FUNCTION THAT TAKES TWO ARGUMENTS AND SUBTRACTS THE SECOND ARGUMENT FROM THE FIRST
 e.g.
 
-subtraction(2, 1) ===> 1
+ ===> 1
 
 subtraction(1, 2) ===> -1
 
 */
 
 function subtraction(num1, num2) {
-  // YOUR CODE HERE
+  return num1 - num2 // YOUR CODE HERE
 }
+subtraction(2, 1);
 
 /*
 QUESTION 6
@@ -101,8 +106,9 @@ multiplication(2, 0) ===> 0
 */
 
 function multiplication(num1, num2) {
-  // YOUR CODE HERE
+  return num1 * num2   // YOUR CODE HERE
 }
+multiplication(2, 1);
 
 /*
 QUESTION 7
@@ -117,9 +123,9 @@ square(4) ===> 16
 */
 
 function square(num) {
-  // YOUR CODE HERE
+  return Math.pow (num, 2) // YOUR CODE HERE
 }
-
+square(4)
 /*
 QUESTION 8
 
@@ -134,13 +140,15 @@ e.g.
 var answerToQuestion8;
 
 function question8() {
+  return test
   // YOUR CODE HERE
 }
-
+var test = 'This is a String for Question 8'
 answerToQuestion8 = question8();
 
 /*
 TEST SECTION, PLEASE DO NOT TOUCH
+
 
 
 
