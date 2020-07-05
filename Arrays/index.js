@@ -116,7 +116,11 @@ unique([1,2,3,2,3,2]) ===> [1, 2, 3];
 */
 
 function unique(array) {
-  // CODE HERE
+  for (i = 0; i < array.length ; i++){
+    
+
+
+  }   // CODE HERE
 }
 
 /*
