@@ -42,7 +42,7 @@ function pushString(arr) {
   arr[3] = 'last element' // CODE HERE
   console.log(arr);
 }
-//pushString(arr);
+pushString(arr);
 
 /*
 QUESTION 2

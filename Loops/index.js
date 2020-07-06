@@ -60,15 +60,11 @@ e.g. checkIfCharExists('hello', 'l') ===> true
 function checkIfCharExists(str, char) {
   for (var i = 0; i < str.length; i++) { 
    if (str[i] === char) {   // CODE HERE
-    result = true;
-    console.log(str[i]);
-    break;
-   }else{
-     result = false;
+    return true;
    }
 
   }
-  return result;
+   return false;
 }
 checkIfCharExists('hello', 'l');
 
@@ -83,9 +79,15 @@ e.g. indexOf('hello', 'l') ===> 2
 */
 
 function indexOf(str, char) {
-  // CODE HERE
+  for (var i = 0; i < str.length; i++) { 
+    if (str[i] === char) {   // CODE HERE
+     return i;
+    }
+    
+   }
+    return str.indexOf[i]; // CODE HERE
 }
-
+indexOf('hello', 'l');
 /*
 QUESTION 5
 
@@ -115,9 +117,19 @@ FizzBuzz
 */
 
 function fizzBuzz(num) {
-  // CODE HERE
+  for (var i = 1; i < num + 1; i++){
+    if(i % 3 === 0 && i % 5 === 0 ){
+      console.log('FizzBuzz');
+    } else if (i % 3 === 0){
+      console.log('Fizz');
+    } else if (i % 5 ===0) {
+      console.log('Buzz');
+    }else {
+      console.log(i);
+    }
+   }  // CODE HERE
 }
-
+fizzBuzz(15);
 /*
 QUESTION 6
 CREATE A FUNCTION THAT TAKES ONE ARGUMENTS, A NUMBER,  AND FIND'S THE   nth FIBONACCI NUMBER.
